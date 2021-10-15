@@ -31,7 +31,10 @@
 -2.x
 -3.x
 
-3)하둡설정
+3)ssh프로토콜로 암호통신을 할 수 있도록 설정하기
+- 하둡 내부에서 ssh통신을 하기 때문에 통신할 수 있도록
+
+4)하둡설정
 
 4)하둡프로그래밍
 -hdfs
@@ -123,3 +126,21 @@ rpm 명령어
 -U : 이전 버전이 있으면 업그레이드
 -v : 설치되는 과정을 보여주기
 -h : 설치과정에 #을 추가하기
+
+1. /home/hadoop/hadoop-1.2.1/conf폴더에서 설정파일 확인
+2. 수정하고 세 대의 머신에 scp로 copy
+3. hadoop을 다시 start-all.sh
+4. 데몬 확인(jps)
+   모두 동일하게 실행
+
+1번 - namenode, jobtracker
+2번 - secondarynamenode, datanode, tasktracker
+3번,4번 - datanode, tasktracker
+
+
+5. 1번부터 4번까지 실행 후 데몬이 정상 실행되지 않는 경우
+   1번 ~4번 노드의 hadoop-data를 모두 삭제
+6. 1번 머신의 hadoop계정에서 hadoop-data디렉토리 mkdir
+7. namenode초기화
+8. start-all.sh 후 jps로 데몬확인
+
