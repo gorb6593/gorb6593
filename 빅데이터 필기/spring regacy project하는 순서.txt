@@ -25,3 +25,6 @@ IoC(inversion of control)컨테이너
 // org.springframework-version 4.2.4.release 일단 두 개만 수정했음
 ===============================================
 5. ?
+
+
+1.DispatcherServlet 등록
