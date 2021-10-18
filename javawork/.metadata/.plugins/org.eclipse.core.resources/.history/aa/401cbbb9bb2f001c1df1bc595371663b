@@ -1,0 +1,10 @@
+package xml;
+//부산광역시_키즈카페현황
+//xml파일은 아님
+//url을 통해서 접속하고 xml정보를 가져온 후 parser로 정보를 추출
+public class APITest04_1 {
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package xml;
+
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+
+//서울특별시 서초구_음식점
+//url을 통해서 접속하고 xml정보를 가져온 후 parser로 원하는 정보를 추출
+public class APITest02 {
+	public static void main(String[] args) {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		try {
+			DocumentBuilder builder = factory.newDocumentBuilder();
+			//파싱할 InputStream생성
+			//1. 웹서버를 제공하는 url에 연결해서 데이터를 가져오기
+			String pharm_url = "https://api.odcloud.kr/api/3053840/v1/uddi:9cb85e53-3592-4a8d-9b07-eec77edbc8c2?page=1&perPage=10";
+			
+			Document document = builder.parse(is);//InputStream객체의 형ㅌ애로 파싱할 정보를 넘겨준다.
+		}catch (ParserConfigurationException e) {			
+			e.printStackTrace();
+		} catch (SAXException e) {			
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

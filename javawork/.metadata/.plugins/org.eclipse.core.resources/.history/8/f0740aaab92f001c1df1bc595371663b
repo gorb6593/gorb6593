@@ -1,0 +1,30 @@
+package html;
+
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+//jsoup라이브러리 이용
+public class HTMLTest01 {
+	public static void main(String[] args) {
+		//1. 원하는 정보가 있는 HTML페이지에 접속하기
+		//	=> 접속해서 해당 페이지를 모두 response해서 Document객체로 변환하기
+		try {
+			Document document = Jsoup.connect("https://finance.naver.com/sise/sise_rise.naver").get();
+			
+			if(document!=null) {
+				//3. 원하는 엘리먼트를 받아오기
+				// Elements는 여러 개의 엘리먼트를 받아오기
+				// Element는 한 개의 엘리먼트 - node와 동일
+				// => table태그 중에서 class속성이 type_2인 엘리먼트의 tbody태그 하위의 모든 tr을 가져오기
+				Elements elements = document.select("table[class='type_2']>tbody>tr");
+				System.out.println(elements.size());
+			}
+			
+		} catch (IOException e) {			
+			e.printStackTrace();
+		}
+	}
+}

@@ -44,6 +44,14 @@
 - 실행 후 데몬 확인
  jps
 
+exam)
+1. /myinput 삭제
+2. /inputdata/LICENSE.txt copy
+3. /inputdata/LICENSE.txt 파일을 mapreduce실행
+=> 결과를 /outputdata
+
+폴더목록 input output
+
 5)하둡프로그래밍
 -hdfs
 -mapreduce

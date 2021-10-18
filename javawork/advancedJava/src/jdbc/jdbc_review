@@ -1,0 +1,9 @@
+jdbc 사용하는 방법
+
+1. Class.forName("oracle.jdbc.driver.OracleDriver") // 로드하는법                
+2. Conncetion con = DriverManager.getConnection(url, user, password) // 커넥션하는법
+3. stmt = con.createStatement() // con.createStatement()의 값을 stmt에 저장
+4. int result = stmt.executeUpdate(sql) // 결과를 나타냄
+
+- try로 묶어야한다. // 왜?
+                 
