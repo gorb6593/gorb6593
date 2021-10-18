@@ -27,31 +27,30 @@
 </head>
 <body>
 		<%
-			EmpVO user = (EmpVO) request.getAttribute("loginOkUser");
+			EmpVO user = (EmpVO) session.getAttribute("loginOkUser");
 		%>
 	<div style="height:90px" style="padding:10px">
 		<div id="toparea"  class="navbar navbar-inverse">
 			<a href="/mvc/index.do" style="position:absolute;top:30px;font-size: 18pt; font-weight: bolder;text-decoration: none;padding-left: 10px">KimSaemERP</a>
 			<ul class="nav navbar-nav navbar-right" 
 			 style="position:relative ;top:20px" >
-										
-					<li style="margin-right: 20px;height: 70px">
-					<% if(user==null){ %>
+					<% if(user==null){ %>					
+					<li style="margin-right: 20px;height: 70px">					
 						<a href="/mvc/emp/loginPage.do"><span class="glyphicon glyphicon-log-in">
 						</span>Login</a></li>	
+						
 						<li><a href="/mvc/emp/insertPage.do"><span class="glyphicon glyphicon-log-out"></span>
 						회원가입</a></li>					
-										
+						</ul>				
 					<% }else{ %>
-						<li><a href="/mvc/emp/loginPage.do"><span class="glyphicon glyphicon-log-out"></span>
-								Logout</a></li>												
-					<% } %>
-					
+						<li><a href="/mvc/emp/logout.do"><span class="glyphicon glyphicon-log-out"></span>
+								Logout</a></li>																						
 					</ul>					
 					<span  class="navbar-form pull-right" >	
 						<img  class="img-circle" style="width: 60px;height: 70px"
 									src="/mvc/images/kimdong.jpg"  />
-					</span>  		
+					</span> 
+					<% } %> 		
 			<form class="navbar-form pull-right" style="position:relative ;top:20px">
 				<input class="form-control mr-sm-2" type="search"
 					placeholder="Search" aria-label="Search">

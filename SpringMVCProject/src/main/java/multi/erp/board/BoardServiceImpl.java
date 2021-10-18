@@ -35,7 +35,7 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public List<BoardVO> searchList(String tag, String search) {
 		
-		return null;
+		return dao.searchList(tag, search);
 	}
 
 	@Override
@@ -47,7 +47,7 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public BoardVO read(String board_no) {
 		
-		return null;
+		return dao.read(board_no);
 	}
 
 	@Override

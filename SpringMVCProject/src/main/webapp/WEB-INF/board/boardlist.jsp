@@ -60,7 +60,7 @@
 				%>			
 					<tr>
 						<td><%= user.getBoard_no() %></td>
-						<td><%= user.getTitle() %></td>											
+						<td><a href="/mvc/board/read.do?board_no=<%= user.getBoard_no()%>&state=READ"><%= user.getTitle() %></a></td>											
 						<td><%= user.getId() %></td>
 						<td><%= user.getWrite_date() %></td>
 					</tr>

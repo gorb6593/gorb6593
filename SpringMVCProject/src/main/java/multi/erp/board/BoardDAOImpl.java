@@ -1,6 +1,8 @@
 package multi.erp.board;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +30,11 @@ public class BoardDAOImpl implements BoardDAO {
 
 	@Override
 	public List<BoardVO> searchList(String tag, String search) {
-		
-		return null;
+		//SqlSession의 여러 메소드를 호출하면서 VO객체, 문자열, Map등에 데이터를 저장해서 전달할 수 있다.
+		Map<String,String> map = new HashMap<String,String>();
+		map.put("tag", tag);
+		map.put("search", search);
+		return sqlSession.selectList("erp.board.dynamicsql", map);
 	}
 
 	@Override
@@ -40,8 +45,8 @@ public class BoardDAOImpl implements BoardDAO {
 
 	@Override
 	public BoardVO read(String board_no) {
-		
-		return null;
+		//sql실행 결과가 레코드 하나인 경우
+		return sqlSession.selectOne("erp.board.read", board_no);
 	}
 
 	@Override
