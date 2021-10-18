@@ -47,7 +47,7 @@
 exam)
 1. /myinput 삭제
 2. /inputdata/LICENSE.txt copy
-3. /inputdata/LICENSE.txt 파일을 mapreduce실행
+3. /inputdata/LICENSE.txt 파일을 map reduce실행
 => 결과를 /outputdata
 
 폴더목록 input output
