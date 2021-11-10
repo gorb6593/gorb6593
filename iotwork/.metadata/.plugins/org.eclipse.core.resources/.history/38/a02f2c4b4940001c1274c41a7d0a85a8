@@ -1,0 +1,53 @@
+package thread.basic;
+
+class Super1{
+	
+}
+class DigitThread extends Super1 implements Runnable{
+	public void run() {
+		for (int i = 1; i < 101; i++) {
+			System.out.print(i);
+			if(i%10==0) {
+				System.out.println();
+				try {
+					Thread.sleep(500);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}
+class AlphaThread extends Super1 implements Runnable{
+	public void run() {
+		for (char i = 'A'; i <= 'Z'; i++) {
+			System.out.print(i);
+			try {
+				Thread.sleep(200);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+public class RunnableTest02 {
+	public static void main(String[] args) {
+		System.out.println("시작");
+		
+		DigitThread obj1 = new DigitThread();
+		AlphaThread obj2 = new AlphaThread();
+		Thread a1 = new Thread(obj1);
+		Thread d1 = new Thread(obj2);
+		a1.start();
+		d1.start();
+		System.out.println("종료");
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("main"+i);
+			try {
+				Thread.sleep(200);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

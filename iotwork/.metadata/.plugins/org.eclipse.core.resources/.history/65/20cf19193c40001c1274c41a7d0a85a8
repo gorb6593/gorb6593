@@ -1,0 +1,15 @@
+package thread.basic;
+
+class Super{
+	
+}
+//이미 상속하고 있는 클래스가 있는 경우 Thread프로그래밍을 하기 위해서 Runnable인터페이스를 상속한다.
+class RunnableDemo01 extends Super{
+	
+}
+
+public class RunnableTest01 {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,43 @@
+package thread.basic;
+
+class DigitThread extends Thread{
+	DigitThread(String name){
+		super(name);
+	}
+	@Override
+	public void run() {
+		//1부터 20까지 출력하는 코드
+		for (int i = 1; i <= 20; i++) {
+			System.out.print(i+"("+getName()+")");
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			if(i%5==0) {
+				System.out.println();
+			}
+		}
+	}
+}
+class AlphaThread extends Thread{
+	AlphaThread(String name){
+		super(name);
+	}
+	@Override
+	public void run() {
+		for (char i = 'A'; i <= 'Z'; i++) {
+			System.out.print(i);
+			try {
+				Thread.sleep(200);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
+public class ThreadTest02 {
+	public static void main(String[] args) {
+		
+	}
+}

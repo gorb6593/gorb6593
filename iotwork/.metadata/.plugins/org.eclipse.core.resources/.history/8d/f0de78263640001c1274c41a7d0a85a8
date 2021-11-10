@@ -1,0 +1,33 @@
+package thread.basic;
+
+class DigitThread extends Thread{
+	DigitThread(String name){
+		super(name);
+	}
+	@Override
+	public void run() {
+		for (int i = 1; i < 101; i++) {
+			System.out.println(i);
+			if(i%10==0) {
+				System.out.println();
+			}
+		}
+	}
+}
+class AlphaThread extends Thread{
+	AlphaThread(String name){
+		super(name);
+	}
+	@Override
+	public void run() {
+		for (String i = A; i <= Z; i++) {
+			
+		}
+	}
+}
+public class ThreadTest02 {
+	public static void main(String[] args) {
+		DigitThread a1 = new DigitThread("a1");
+		a1.start();
+	}
+}

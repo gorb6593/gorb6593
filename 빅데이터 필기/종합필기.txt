@@ -160,3 +160,6 @@ rpm 명령어
 7. namenode초기화
 8. start-all.sh 후 jps로 데몬확인
 
+하둡 잡기술
+HDFS(Hadoop Distributed File System) 분산 저장
+

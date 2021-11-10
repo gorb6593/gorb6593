@@ -1,0 +1,21 @@
+package socket;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class MynetServer02 {
+	public static void main(String[] args) {
+		try {			
+			ServerSocket server = new ServerSocket(12345);
+			System.out.println("서버준비완료, 클라이언트 접속 대기");
+			//여러 클라이언트에게 서비스를 제공하기 위해서 무한루프 
+			while(true) {				
+			Socket client = server.accept();
+			System.out.println("접속한 클라이언트:"+client);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}
