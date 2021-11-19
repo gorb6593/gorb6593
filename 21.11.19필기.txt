@@ -1,0 +1,34 @@
+frame => 뼈다구
+VO => 밸류 오브젝트
+product  => dao는 mybatis랑 연동
+myspring.xml => 순수하게  자바 애플리케이션을 위함 / 웹이랑 상관없음
+ojdbc => db연동하기 위함
+라이브러리는 한 폴더에서 관리
+
+controller => MVC를 하기 위함
+img => 이미지,html 등.. 근데 img는 이미지만
+view => jsp
+WEP-INF => web이 돌아가기 위한 web.xml이 있음 
+lib => web에 필요한 라이브러리 저장
+config => spring에 관련된 것 / log4 => 로그찍기 위한 것
+
+web.xml
+12~19줄
+요청이 들어오면 spring으로 실행
+
+20~23 뒤에 mc라고 붙어있으면 action으로 가라
+
+1. main.jsp 118~119줄 바꾸기
+
+2. maincontroller에서 login.mc 복사에서 
+2개 추가해서 register.mc , about.mc 추가
+
+3. login.jsp복사해서 view밑에 추가해서 수정
+
+192.168.0.7로 접속 후
+login
+id => id01
+pwd => pwd01
+
+FCM 추가
+MQTT 연결
