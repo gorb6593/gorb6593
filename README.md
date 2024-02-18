@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 # 💪Skills
 -->
 
-### Tech Stack
+### Tech Stack 
 ![Java](https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white)
 ![Spring](https://img.shields.io/badge/Spring%20Boot-6DB33F.svg?&style=for-the-badge&logo=Spring%20Boot&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1.svg?&style=for-the-badge&logo=MySQL&logoColor=white)
@@ -30,8 +30,6 @@ Here are some ideas to get you started:
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=gorb6593&layout=compact)
 
-
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=gorb6593)](https://github.com/anuraghazra/github-readme-stats)
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=go6593)](https://solved.ac/go6593/)
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=gorb6593)](https://github.com/anuraghazra/github-readme-stats)
