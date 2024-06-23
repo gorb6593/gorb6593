@@ -34,3 +34,9 @@ Here are some ideas to get you started:
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=go6593)](https://solved.ac/go6593/)
 
+### 📖 Certificate
+
+|Certificate|Date|Organization|
+|:---:|:---:|:---:|
+|SQL Developer|2024.06.21|한국데이터산업진흥원|
+
