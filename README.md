@@ -34,8 +34,8 @@
  <img src="https://img.shields.io/badge/DataGrip-000000?style=flat&logo=DataGrip-000000&logoColor=white"/>
  <img src="https://img.shields.io/badge/git-F05032?style=flat&logo=git&logoColor=white"/>
  <img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/> 
- <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/>
- <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=Discord-5865F2&logoColor=white"/> 
+<!--  <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/>
+ <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=Discord-5865F2&logoColor=white"/>  -->
 </div>
 
 <!--
