@@ -30,12 +30,14 @@
  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=Linux-FCC624&logoColor=white"/>
  <img src="https://img.shields.io/badge/Apache%20Tomcat-F8DC75?style=flat&logo=Apache%20Tomcat-F8DC75&logoColor=white"/>
 </div>
+<!--
 <h4>✔Tool</h4>
 <div>
  <img src="https://img.shields.io/badge/IntelliJ IDEA-000000?style=flat&logo=IntelliJ IDEA-000000&logoColor=white"/>
  <img src="https://img.shields.io/badge/DataGrip-000000?style=flat&logo=DataGrip-000000&logoColor=white"/>
  <img src="https://img.shields.io/badge/git-F05032?style=flat&logo=git&logoColor=white"/>
  <img src="https://img.shields.io/badge/github-181717?style=flat&logo=github&logoColor=white"/> 
+ -->
 <!--  <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white"/>
  <img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=Discord-5865F2&logoColor=white"/>  -->
 </div>
